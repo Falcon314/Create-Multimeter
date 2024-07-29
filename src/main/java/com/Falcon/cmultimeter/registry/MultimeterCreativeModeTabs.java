@@ -1,5 +1,6 @@
 package com.Falcon.cmultimeter.registry;
 
+import com.simibubi.create.AllCreativeModeTabs;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.utility.Components;
 import com.tterrag.registrate.util.entry.ItemProviderEntry;
@@ -35,7 +36,7 @@ public class MultimeterCreativeModeTabs {
 	public static final RegistryObject<CreativeModeTab> BASE_CREATIVE_TAB = REGISTER.register("base",
 			() -> CreativeModeTab.builder()
 					.title(Components.translatable("itemGroup.cmultimeter.base"))
-					.withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
+					.withTabsBefore(AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey())
 					.icon(MultimeterBlocks.MULTIMETER::asStack)
 					.displayItems(new MultimeterCreativeModeTabs.RegistrateDisplayItemsGenerator(true, MultimeterCreativeModeTabs.BASE_CREATIVE_TAB))
 					.build());
