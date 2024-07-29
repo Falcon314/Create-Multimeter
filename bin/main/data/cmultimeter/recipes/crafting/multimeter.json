@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "modid:stressometer"
+    },
+    {
+      "item": "modid:speedometer"
+    }
+  ],
+  "result": {
+    "item": "cmultimeter:multimeter",
+    "count": 2
+  }
+}
